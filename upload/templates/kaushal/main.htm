@@ -1,0 +1,52 @@
+<div class="rowcontainer">
+
+<div class="twocolumn">
+<div id="sidebar">
+
+		<ul>
+			<li><h2>Categories</h2>
+				{sort}
+			</li>
+			<li><h2>Archives</h2>
+				{archive}
+			</li>
+			<li><h2>Links</h2>
+				{link}
+			</li>
+		</ul>
+
+<div id="searchdiv">
+	<form name="form1" id="searchform" method="post" action="{blogurl}index.php?do=search">
+		<h2>Search</h2>
+          <div>
+            <input type="text" name="keyword" id="keyword" size="15" /> 
+            <input type="submit" id="submit" value="Search" />
+          </div>
+	</form>
+</div>
+
+</div>
+</div>
+
+<!-- right sidebar-->
+
+<div class="twocolumn">
+<div id="sidebar">
+	<ul>
+		<li><h2>Entries</h2>
+			{lastblog}
+		</li>
+
+		<li><h2>Comments</h2>
+			{lastRemark}
+		</li>
+	</ul>
+</div>
+</div>
+
+<div class="sixcolumn">
+{main}
+</div>
+<!--close right sidebar-->
+
+</div>

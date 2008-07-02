@@ -1,0 +1,40 @@
+<div id="comments">
+<h1>¡Ù—‘∑…”Ô</h1>
+<!-- BEGIN gbA -->
+<BR />
+<div id="comment" class="comment">
+<h4>{date},  <!-- IF email --><a href="mailto:{email}"><!-- ENDIF -->{name}<!-- IF email --></a><!-- ENDIF --> said:</h4>
+<div style="width:480px;overflow: hidden;">{content}
+<!-- IF reply -->
+<div style="border-top-width: 1px;border-top-style: solid;border-top-color: #DDDDDD;padding-top:10px;margin-top: 10px;">ªÿ∏¥£∫{reply}</div>
+<!-- ELSE -->
+<BR />
+<!-- ENDIF -->
+<BR />
+</div>
+</div>
+<!-- END trackback -->
+<BR /><BR />
+<div id="page">{cutpage}</div>
+</div>
+
+
+<div id="commentform">
+<a name="postcomment"></a><h1>∑√øÕ¡Ù—‘</h1>
+<form name="input" method="post" action="index.php?do=newgb" id="formGuest">
+<p>
+<input name="username" type="text" class="text" id="username" value="" size="35" />
+<label for="author"> Í«≥∆ *</label>
+</p>
+<p>
+<input name="email" type="text" class="text" id="email2" size="35" />
+<label for="author"> E-mail</label>
+</p>
+<p>
+<textarea name="content" rows="10" cols="60" class="textarea" id="textarea" style="border: 1px solid #ff9400;"></textarea>
+</p>
+<p>
+<input type="submit" name="Submit" value="Ã·Ωª¡Ù—‘" class="button1" id="remarkButton" style="border: 1px solid #ff9400;background-color: #FFFFFF;padding-top: 6px;padding-bottom: 3px;padding-left: 4px;padding-right: 4px;" />
+</p>
+</form>
+</div>

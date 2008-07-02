@@ -1,0 +1,71 @@
+/**
+ * 此css文件定义日历的样式，每个模板各有一个。
+ */
+
+ 
+/* Calendar sytle. */
+#calendar {
+	margin-top: 25px;
+}
+
+#calendarHerder {
+	width:98%;
+	margin-top: 10px;
+	margin-left: 3px;
+}
+
+/* 月日的 css */
+.calendarHerder {
+	text-decoration: none;
+}
+
+/* 最外面大单元格的 css */
+.outTable {
+	background-color: #E9FFBB;
+	margin-left: 3px;
+}
+
+/* 日期的table的 css */
+#daytable {
+	width:200px;
+}
+
+/* 日期单元格的 css */
+.calendar {
+	background-color: #E9FFBB;
+	text-decoration: none;
+}
+
+a.calendar:link,a.calendar:visited,a.calendar:hover,a.calendar:active {
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+a.calendarHerder:link,a.calendarHerder:visited,a.calendarHerder:hover,a.calendarHerder:active {
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+/* 当天日期单元格的 css */
+.riqi {
+	background-color: #E9FFBB;
+	font-weight: bold;
+}
+
+/* 星期数单元格 css */
+.weektd {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #A3CC52;
+}
+
+/* 星期六和星期日的文字css */
+.satsun {
+	color:#FF0000
+}

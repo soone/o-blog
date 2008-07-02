@@ -1,0 +1,22 @@
+<div id="content">
+      <div id="contentleft">
+        <div class="sidemenu">日志分类</div>
+        <div class="sidecon">
+		  {sort}
+        </div>
+        <div class="sidemenu">文章归档</div>
+        <div class="sidecon">
+          {archive}
+        </div>
+		<div class="sidemenu">快速搜索</div>
+        <div class="sidecon">
+          <form name="form1" method="post" action="{blogurl}index.php?do=search">
+          <input name="keyword" type="text" id="keyword" />
+          <input name="Submit" type="submit" value="搜索" id="searchB" />
+          </form>
+        </div>
+      </div>
+      <div id="contentright">
+	    {main}
+      </div>
+    </div>

@@ -1,0 +1,36 @@
+<div class="remark">
+此文的引用地址：<br /><br />
+<strong>GB2312</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=gb2312" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=gb2312</a><br />
+<strong>UTF-8</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=utf-8" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=utf-8</a>
+</div>
+
+<!-- IF tbnum --><h2><strong>{tbnum} 条引用</strong></h2><br /><!-- ENDIF -->
+<!-- BEGIN trackback -->
+<div class="remark">
+<p style="font-size:12px"><strong># {id}: </strong> {date}, <a href="{url}">{title}</a>, {blogname} said:</p>
+<p style="font-size:12px">{excerpt}</p>
+</div>
+<!-- END trackback -->
+
+<!-- IF num --><h2><strong>{num} 条评论</strong></h2><br /><!-- ENDIF -->
+<!-- BEGIN remark -->
+<div class="remark">
+<p style="font-size:12px"><strong># {id}: </strong> {date}, <!-- IF email --><a href="mailto:{email}"> <!-- ENDIF -->{username}<!-- IF email --></a><!-- ENDIF --> said:</p>
+<p style="font-size:12px">{content}</p>
+</div>
+<!-- END remark -->
+
+<h2><strong>添加评论</strong></h2>
+
+<form name="input" method="post" action="{blogurl}index.php?do=newremark" id="formRemark">
+<div class="remark">
+<p style="font-size:12px"><input name="username" type="text" class="text" id="username" value="{name}" /> 昵称 *</p>
+<p style="font-size:12px"><input name="email" type="text" class="text" id="email2" value="{email}" /> E-mail </p>
+<p style="font-size:12px"><textarea name="content" rows="5" cols="10" class="textarea" id="textarea"></textarea><input name="inblog" type="hidden" id="inblog2" value="{inblog}" /></p>
+<p style="font-size:12px"><input type="submit" name="Submit" value="发表评论" class="button1" id="remarkButton" />
+<!-- IF makehtml -->
+<!-- ELSE -->
+<input name="remember" id="check" type="checkbox" value="1" checked="checked" /> Remember Me</p>
+<!-- ENDIF makehtml -->
+</div>
+</form>

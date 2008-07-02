@@ -1,0 +1,14 @@
+<!-- BEGIN list -->
+<div class="post cate auth1">
+	<h4 class="post-date">{date}</h4>
+	<h2 class="post-title"><a href="{path}">{title}</a></h2>
+	<div class="post-body">
+	{content}
+	</div>
+	<h6 class="post-footer">
+		发布:{author} | 分类:<a href="index.php?do=class&amp;id={classid}" title="查看分类： {className}">{className}</a> | <a href="{path}#remark" title="查看评论">评论</a>:{remarkNum} | <a href="{path}#remark" title="查看引用">引用</a>:{trackbackNum} <!-- IF parent.show_viewcount -->| <a href="{path}">阅读</a>:<script type="text/javascript" src="{parent.blogurl}count.php?do=get&amp;id={id}"></script><!-- ENDIF -->
+	</h6>
+</div> 
+<!-- END list -->
+
+<div class="pagebar">分页: {page}</div>

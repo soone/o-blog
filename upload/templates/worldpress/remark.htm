@@ -1,0 +1,53 @@
+<p id="filedunder">
+			此日志的引用地址<br />
+			GB2312  <a href="{blogurl}trackback.php?id={inblog}&amp;encode=gb2312" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=gb2312</a><br />
+			UTF-8  <a href="{blogurl}trackback.php?id={inblog}&amp;encode=utf-8" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=utf-8</a><br />
+		</p>
+	</div>
+
+<!-- comments ................................. -->
+<div id="comments">
+	<!-- IF tbnum -->
+	<h2>{tbnum} 条引用</h2>
+	<!-- ENDIF -->
+	<ul>
+	<!-- BEGIN trackback -->
+		<li id="trackback-{id}" class="comment">
+			<p class="header alt{ROWBIT}">
+				<strong>{id}.</strong><a href="{url}" rel='external nofollow'>{title}</a> &nbsp;|&nbsp; {date}
+			</p>
+			<p>{excerpt}</p>
+		</li>
+	<!-- END trackback -->
+	</ul>
+
+	<!-- IF num -->
+	<h2>{num} 条评论</h2>
+	<!-- ENDIF -->
+	<ul>
+	<!-- BEGIN remark -->
+		<li id="comment-{id}" class="comment">
+			<p class="header alt{ROWBIT}">
+				<strong>{id}.</strong><!-- IF email --><a href="mailto:{email}" rel='external nofollow'> <!-- ENDIF -->{username}<!-- IF email --></a><!-- ENDIF --> &nbsp;|&nbsp; {date}
+			</p>
+			<p>{content}</p>
+		</li>
+	<!-- END remark -->
+	</ul>
+
+	<h2>发表评论</h2>
+	<form action="{blogurl}index.php?do=newremark" method="post" id="commentform">
+		<fieldset>
+			<p><label for="author">昵称</label> <input type="text" name="username" id="author" value="{name}" tabindex="1" /> <em>Required</em></p>
+			<p><label for="email">Email</label> <input type="text" name="email" id="email" value="{email}" tabindex="2" /></p>
+			<p><label for="comment">Comment</label> <textarea name="content" id="comment" cols="45" rows="10" tabindex="4"></textarea></p>
+			<p><input type="hidden" name="inblog" value="{inblog}" />
+			<!-- IF makehtml --><!-- ELSE -->
+			<input name="remember" type="hidden" value="1" />
+			<!-- ENDIF makehtml -->
+			<input type="submit" name="submit" value="Submit" class="button" tabindex="5" /></p>
+	  	</fieldset>
+	</form>
+
+</div> <!-- /comments -->
+</div>

@@ -1,0 +1,24 @@
+<br />
+<div class="remarkNum" style="padding-left: 15px;padding-top: 15px;"><strong>留言:</strong></div>
+<br /><br />
+<!-- BEGIN gbA -->
+<ul class="msg">
+	<li class="">{date}, <!-- IF email --><a href="mailto:{email}"><!-- ENDIF -->{name}<!-- IF email --></a><!-- ENDIF --> said:</li>
+	<li class="msgurl">{content}
+	<!-- IF reply -->
+	<span style="color:#FF0000;padding-top:5px;"><br /><br />回复：{reply}</span>
+	<!-- ENDIF -->
+	</li>
+</ul>
+<!-- END gbA -->
+<div class="post pagebar">分页: {cutpage}</div>
+<div class="post" id="divCommentPost">
+	<p class="posttop"><a name="comment">访客留言</a></p>
+	<form name="input" method="post" action="index.php?do=newgb" id="formGuest">
+	<p style="margin: 5px;">名称(*) <input name="username" type="text" class="text" id="username" value="游客" />
+	E-mail <input name="email" type="text" class="text" id="email2" /></p>
+	<p style="margin: 5px;"><textarea name="content" rows="8" cols="70" class="textarea" id="textarea"></textarea></p>
+	<p style="margin: 5px;"><input type="submit" name="Submit" value="提交留言" class="button1" id="remarkButton" />
+	</p>
+</div>
+</div>

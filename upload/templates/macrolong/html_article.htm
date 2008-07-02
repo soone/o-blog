@@ -1,0 +1,55 @@
+<div id="mainWrapper">
+      <div id="mainWrapper-inner">
+        <div id="content" class="content">
+          <div id="innerContent">
+			<div class="announce" style="display: block">
+				<div class="announce-content">
+					{discribe}
+				</div>
+			</div>
+        {main}
+		<!-- start right bar -->
+        <div id="sidebar" class="sidebar">
+          <div id="innerSidebar">
+            <div id='panelCategory' class="panel">
+              <h5 style="cursor: pointer" onclick='showhidediv("sideblock_category");'><span>分类</span></h5>
+              <div class="panel-content" id="sideblock_category" style="display: block">
+                 {sort}
+              </div>
+            </div>
+            <div class="panel">
+              <h5 onclick='showhidediv("sidebar_search");'><span>搜索</span></h5>
+              <div class="panel-content" id="sidebar_search" style="display: block">
+               <form name="form1" method="post" action="{blogurl}index.php?do=search">
+			      <input name="keyword" type="text" class="search-field" id="keyword" />
+                  <input value="搜索" class="button" type="submit" name="Submit" />
+                </form>
+              </div>
+            </div>
+            <div class="panel">
+              <h5 onclick='showhidediv("sidebar_misc");'><span>其他</span></h5>
+              <div class="panel-content" id="sidebar_misc" style="display: block">
+                <a href='{blogurl}rss2.php'>聚合：RSS 2.0</a><br/>
+				<a href='{blogurl}rss1.php'>聚合：RSS 1.0</a><br/>
+                编码：GB2312<br/>
+                <a href="http://validator.w3.org/check?uri=referer" target="_blank">XHTML 1.0</a><br/>
+				<a href="http://jigsaw.w3.org/css-validator" target="_blank">CSS 2.0</a>
+			</div>
+            </div>
+
+            <!-- start left bar -->
+          </div>
+        </div>
+        <div id="sidebar2" class="sidebar-right">
+          <div id="innerSidebar2">
+            <div class="panel">
+              <h5 onclick='showhidediv("sidebar_link");'><span>我的链接</span></h5>
+              <div class="panel-content" id="sidebar_link" style="display: block">
+                {link}
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>

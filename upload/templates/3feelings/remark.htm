@@ -1,0 +1,62 @@
+<div style="argin-left: 10px;">
+<BR />
+<h1>此文的引用地址:</h1>
+<ul>
+<li><strong>GB2312</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=gb2312" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=gb2312</a></li>
+<li><strong>UTF-8</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=utf-8" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=utf-8</a></li>
+</ul>
+</DIV>
+</DIV>
+
+<!-- IF tbnum -->
+<div id="comments">
+<h1>共 {tbnum} 引用</h1>
+<!-- BEGIN trackback -->
+<div id="comment" class="comment">
+<h4>#{id}. {date}, by <a href="{url}">{blogname}</a> </h4>
+{excerpt}
+<BR /><BR />
+</div>
+<BR />
+<!-- END trackback -->
+</div>
+<!-- ENDIF -->
+
+<!-- IF num -->
+<div id="comments">
+<h1>共 {num} 评论</h1>
+<!-- BEGIN remark -->
+<div id="comment" class="comment">
+<h4>#{id}. {date}, by <!-- IF email --><a href="mailto:{email}"> <!-- ENDIF -->{blogname}<!-- IF email --></a><!-- ENDIF --></h4>
+<div style="width:500px;overflow: hidden;">{content}</div>
+
+<BR /><BR />
+</div>
+<BR />
+<!-- END remark -->
+</div>
+<!-- ENDIF -->
+
+<div id="commentform">
+<a name="postcomment"></a><h1>新增评论</h1>
+<form name="input" method="post" action="{blogurl}index.php?do=newremark" id="formRemark">
+<p>
+<input name="username" type="text" class="text" id="username" value="{name}" size="35" />
+<label for="author"> 昵称 *</label>
+</p>
+<p>
+<input name="email" type="text" class="text" id="email2" value="{email}" size="35" />
+<label for="author"> E-mail</label>
+</p>
+<p>
+<textarea name="content" rows="10" cols="60" class="textarea" id="textarea" style="border: 1px solid #ff9400;"></textarea><input name="inblog" type="hidden" id="inblog2" value="{inblog}" />
+</p>
+<p>
+<input type="submit" name="Submit" value="提交评论" class="button1" id="remarkButton" style="border: 1px solid #ff9400;background-color: #FFFFFF;padding-top: 6px;padding-bottom: 3px;padding-left: 4px;padding-right: 4px;" />
+<!-- IF makehtml -->
+<!-- ELSE -->
+<input name="remember" id="check" type="checkbox" value="1" checked="checked" /> Remember Me</p>
+<!-- ENDIF makehtml -->
+</p>
+</form>
+</div>

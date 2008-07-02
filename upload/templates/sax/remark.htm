@@ -1,0 +1,54 @@
+        <div class="article">
+          <div class="commentTitle">
+            <div class="commentName">Trackback</div>
+          </div>
+          <div class="tburl"><strong>GB2312</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=gb2312" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=gb2312</a></div>
+          <div class="tburl"><strong>UTF-8</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=utf-8" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=utf-8</a></div>
+
+		  <!-- IF tbnum -->
+          <div class="commentTitle">
+            <div class="commentName">Trackback</div>
+            <div class="commentNum">{tbnum}条记录</div>
+          </div>
+		  <!-- ENDIF -->
+          <!-- BEGIN trackback -->
+          <div class="commentCon">{excerpt}</div>
+          <div class="commentTime"><strong># {id}: </strong> {date}, <a href="{url}">{title}</a>, {blogname} said:</div>
+          <!-- END trackback -->
+
+          <!-- IF num -->
+          <div class="commentTitle">
+            <div class="commentName">访客评论</div>
+            <div class="commentNum">{num}条记录</div>
+          </div>
+		  <!-- ENDIF -->
+          <!-- BEGIN remark -->
+          <div class="commentCon">{content}</div>
+          <div class="commentTime"><strong># {id}: </strong> {date}, <!-- IF email --><a href="mailto:{email}"> <!-- ENDIF -->{username}<!-- IF email --></a><!-- ENDIF --> said:</div>
+          <!-- END remark -->
+
+          <div class="commentTitle">
+            <div class="commentName">发表评论</div>
+          </div>
+          <form action="{blogurl}index.php?do=newremark" method="post">
+            <div class="oneinput">名字 *<br />
+              <input name="username" type="text" class="bginput" />
+            </div>
+            <div class="oneinput">E-mail<br />
+              <input name="email" type="text" class="bginput" />
+            </div>
+            <div class="oneinput">评论内容 *<br />
+              <textarea name="content" cols="60" rows="10" class="bginput"></textarea>
+			  <input name="inblog" type="hidden" id="inblog2" value="{inblog}" />
+            </div>
+            <div class="oneinput">
+              <input type="submit" value="提交" class="bgbutton" />
+			  <!-- IF makehtml -->
+			  <!-- ELSE -->
+			  <input name="remember" id="check" type="checkbox" value="1" checked="checked" /> Remember Me
+			  <!-- ENDIF makehtml -->
+            </div>
+          </form>
+        </div>
+      
+   

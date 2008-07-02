@@ -1,0 +1,65 @@
+<div id="commentWrapper" class="comment-wrapper">
+
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">
+<b>此文的引用地址:</b><br /><br />
+GB2312 <a href="{blogurl}trackback.php?id={inblog}&amp;encode=gb2312" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=gb2312</a><br />
+UTF-8 <a href="{blogurl}trackback.php?id={inblog}&amp;encode=utf-8" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=utf-8</a>
+</div>
+
+<!-- IF tbnum -->
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">
+<b>{tbnum} 条引用</b>
+</div>
+<!-- ENDIF -->
+<!-- BEGIN trackback -->
+<div style="padding: 8px;margin: 5px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #DEE4DA;overflow:hidden;">
+<div class="commentbox">
+		<div class="commentbox-title">
+		<strong># {id}:  {date}, <a href="{url}">{title}</a>, {blogname} said:</strong>
+			<div class="commentbox-label">{date}</div>
+		</div>
+		<br />
+		<div class="commentbox-content">
+			{excerpt}
+		</div>
+</div></div>
+<!-- END trackback -->
+
+<!-- IF num -->
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">
+<b>{num} 条评论</b>
+</div>
+<!-- ENDIF -->
+<!-- BEGIN remark -->
+<div style="padding: 8px;margin: 5px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #DEE4DA;overflow:hidden;">
+<div class="commentbox">
+		<div class="commentbox-title">
+		<strong># {id}: {date}, <!-- IF email --><a href="mailto:{email}"> <!-- ENDIF -->{username}<!-- IF email --></a><!-- ENDIF --> said:</strong>
+		</div>
+		<br />
+		<div class="commentbox-content">
+			{content}
+		</div>
+</div></div>
+<!-- END remark -->
+</div>
+
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">
+<strong>添加评论</strong></div>
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">
+<form name="input" method="post" action="{blogurl}index.php?do=newremark" id="formRemark">
+<p style="margin: 0px;padding: 2px;"><input name="username" type="text" id="username" value="{name}" size="30" /> 昵称 *</p>
+<p style="margin: 0px;padding: 2px;"><input name="email" type="text" id="email2" value="{email}" size="30" /> E-mail </p>
+<p style="margin: 0px;padding: 2px;"><textarea name="content" rows="9" cols="50" class="textarea" id="textarea"></textarea><input name="inblog" type="hidden" id="inblog2" value="{inblog}" /></p>
+<p style="margin: 0px;padding: 2px;"><input type="submit" name="Submit" value="提交评论" class="subbutton" id="remarkButton" />
+<!-- IF makehtml -->
+<!-- ELSE -->
+<input name="remember" id="check" type="checkbox" value="1" checked="checked" /> Remember Me
+<!-- ENDIF makehtml -->
+</p>
+</form>
+</div>
+
+
+<div class="article-bottom" style="display: block">
+</div>
