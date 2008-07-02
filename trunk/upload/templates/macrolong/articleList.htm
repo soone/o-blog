@@ -1,0 +1,21 @@
+			<!-- BEGIN list -->
+			<div class="textbox">
+              <div class="textbox-title">
+                <h4> <span><img src="{parent.blogurl}/templates/macrolong/unstarred.gif" alt="{onlytitle}"  border="0"/></span> <a href="{path}">{title}</a> </h4>
+
+                <div class="textbox-label"> [ {date} | by {author} ] </div>
+              </div>
+              <div class="textbox-content">
+			  {content}
+              <div style="margin-top: 9px;">
+			  <img src="{parent.blogurl}/templates/macrolong/readmore.gif" alt=""/><a href="{path}" title="点击阅读全文">查看更多</a> </div>
+              </div>
+              <div class="textbox-bottom"> <a href="index.php?do=class&amp;id={classid}" title="查看分类： {className}">{className}</a> | <a href="{path}#remark" title="发表您的评论">评论({remarkNum})</a> | <a href="{path}#remark" title="查看引用">引用({trackbackNum})</a> <!-- IF parent.show_viewcount -->| <a href="{path}">阅读</a>(<script type="text/javascript" src="{parent.blogurl}count.php?do=get&amp;id={id}"></script>)<!-- ENDIF --> </div>
+            </div>
+			<!-- END list -->
+
+          <div class="article-bottom" style="display: block">
+              <div class="pages"> {page}</div>
+            </div>
+          </div>
+        </div>

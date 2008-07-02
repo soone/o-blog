@@ -1,0 +1,465 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 18px; BACKGROUND: #262626; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+H1 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px 10px; COLOR: #fff; TEXT-DECORATION: none
+}
+H2 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px 10px; COLOR: #fff; TEXT-DECORATION: none
+}
+H3 {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px 10px; COLOR: #fff; TEXT-DECORATION: none
+}
+SPAN#copyright {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px 10px; COLOR: #fff; TEXT-DECORATION: none
+}
+SPAN#design {
+	FONT-WEIGHT: normal; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px 10px; COLOR: #fff; TEXT-DECORATION: none
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1em; LINE-HEIGHT: 1.4em; PADDING-TOP: 0px
+}
+H1 {
+	FONT-SIZE: 2em; LINE-HEIGHT: 1.4em; LETTER-SPACING: 0.25em
+}
+H2 {
+	FONT-SIZE: 1em; COLOR: #ffa000; LINE-HEIGHT: 1.4em
+}
+H3 {
+	FONT-SIZE: 0.8em; COLOR: #ffa000; LINE-HEIGHT: 1.4em
+}
+SPAN#copyright {
+	FONT-SIZE: 13px; LINE-HEIGHT: 35px
+}
+SPAN#design {
+	FONT-SIZE: 13px; FLOAT: right; LINE-HEIGHT: 35px
+}
+SPAN.validation {
+	FLOAT: right; MARGIN-RIGHT: 10px
+}
+.validation IMG {
+	MARGIN: 0px
+}
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#hdrimg A {
+	FONT-WEIGHT: normal; COLOR: #06ff00; TEXT-DECORATION: none
+}
+#hdrimg A STRONG {
+	FONT-WEIGHT: normal; COLOR: #fff; TEXT-DECORATION: none
+}
+#hdrimg A:hover {
+	FONT-WEIGHT: normal; COLOR: #fff; TEXT-DECORATION: none
+}
+#hdrimg A:hover STRONG {
+	FONT-WEIGHT: normal; COLOR: #06ff00; TEXT-DECORATION: none
+}
+#hdrimg {
+	BACKGROUND: url(hdr.gif) repeat-x; FLOAT: left; MARGIN-BOTTOM: 5px; WIDTH: 100%; HEIGHT: 150px; voice-family: inherit
+}
+UNKNOWN {
+	HEIGHT: 150px
+}
+.rowcontainer {
+	BACKGROUND: #333; FLOAT: left; MARGIN-BOTTOM: 5px; OVERFLOW: hidden; WIDTH: 100%
+}
+#bttmbar {
+	BACKGROUND: url(hdr.gif) repeat-x 50% bottom; FLOAT: left; WIDTH: 100%; HEIGHT: 35px
+}
+.fullcolumn {
+	FLOAT: left; WIDTH: 99%
+}
+.halfcolumn {
+	FLOAT: left; WIDTH: 49%
+}
+.onethirdcolumn {
+	FLOAT: left; WIDTH: 33%
+}
+.quartercolumn {
+	FLOAT: left; WIDTH: 24.5%
+}
+.threequartercolumn {
+	FLOAT: left; WIDTH: 74.5%
+}
+.twocolumn {
+	FLOAT: left; WIDTH: 20%
+}
+.sixcolumn {
+	FLOAT: left; WIDTH: 59%
+}
+#nav {
+	LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 145px; HEIGHT: 25px
+}
+UL#nav {
+	MARGIN: 0px
+}
+#nav LI {
+	FONT-SIZE: 13px; FLOAT: left; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
+}
+#nav LI A {
+	DISPLAY: block; MARGIN-LEFT: 5px; WIDTH: 90px; LINE-HEIGHT: 25px; TEXT-DECORATION: none
+}
+#nav A:link {
+	BACKGROUND: url(tab.gif) no-repeat 0px -25px
+}
+#nav A:visited {
+	BACKGROUND: url(tab.gif) no-repeat 0px -25px
+}
+#nav A:hover {
+	BACKGROUND: url(tab.gif) no-repeat 0px 0px
+}
+#nav A:active {
+	BACKGROUND: url(tab.gif) no-repeat 0px 0px
+}
+#nav A#current {
+	BACKGROUND: url(tab.gif) no-repeat 0px 0px
+}
+ACRONYM {
+	CURSOR: help; BORDER-BOTTOM: #999 1px dashed
+}
+BLOCKQUOTE {
+	BORDER-TOP: #ffa000 2px solid; PADDING-LEFT: 5px; MARGIN-LEFT: 1.5em; BORDER-BOTTOM: #ffa000 2px solid; BACKGROUND-COLOR: #333333
+}
+UL {
+	LIST-STYLE-IMAGE: url(bull.gif); MARGIN: 5px 0px 5px 20px
+}
+OL {
+	MARGIN: 5px 0px 5px 20px; LIST-STYLE-TYPE: decimal
+}
+OL LI {
+	FONT-SIZE: 0.8em; COLOR: #fff; LINE-HEIGHT: 1.4em
+}
+UL LI {
+	FONT-SIZE: 0.8em; COLOR: #fff; LINE-HEIGHT: 1.4em
+}
+HR {
+	BACKGROUND: #444; MARGIN: 10px 0px; COLOR: #444; HEIGHT: 1px
+}
+IMG {
+	MARGIN: 0px 10px
+}
+IMG.right {
+	FLOAT: right
+}
+IMG.left {
+	FLOAT: left
+}
+#searchdiv {
+	MARGIN-BOTTOM: 10px; MARGIN-LEFT: 5px
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-FAMILY: "Georgia", "Times New Roman", Times, serif
+}
+H5 {
+	FONT-WEIGHT: normal; FONT-FAMILY: "Georgia", "Times New Roman", Times, serif
+}
+H6 {
+	FONT-WEIGHT: normal; FONT-FAMILY: "Georgia", "Times New Roman", Times, serif
+}
+A {
+	FONT-WEIGHT: bold; COLOR: #fff; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #fff; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H3.entrytitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 20px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.1em; PADDING-TOP: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+H3.entrytitle A {
+	COLOR: #ffa200; TEXT-DECORATION: none
+}
+H3.entrytitle A:visited {
+	COLOR: #ffa200; TEXT-DECORATION: none
+}
+H3.entrytitle A:hover {
+	COLOR: #ffa200; TEXT-DECORATION: underline
+}
+H3 A {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; COLOR: #ffa200; BORDER-BOTTOM: 0px; TEXT-DECORATION: none
+}
+DIV .entrybody H3 {
+	MARGIN-BOTTOM: 10px; COLOR: #b37100
+}
+DIV .entrybody H2 {
+	MARGIN-BOTTOM: 10px; COLOR: #b37100
+}
+H3 A:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; COLOR: #333; BORDER-BOTTOM: 0px; TEXT-DECORATION: none; text-shadow: none
+}
+.firstpost P.comments_link {
+	MARGIN: 0px
+}
+.entrybody P.comments_link {
+	MARGIN: 0px
+}
+.firstpost {
+	BORDER-RIGHT: #3e4243 1px solid; PADDING-RIGHT: 10px; BACKGROUND-POSITION: right bottom; BORDER-TOP: #3e4243 1px solid; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(latest.gif); MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 10px; BORDER-LEFT: #3e4243 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #3e4243 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #2e3233
+}
+.entry {
+	overflow:hidden;
+	BORDER-RIGHT: #3e4243 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #3e4243 1px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 10px; BORDER-LEFT: #3e4243 1px solid; COLOR: #ffffff; PADDING-TOP: 10px; BORDER-BOTTOM: #3e4243 1px solid; BACKGROUND-COLOR: #2e3233
+}
+.arc {
+	BORDER-RIGHT: #3e4243 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #3e4243 1px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 10px; BORDER-LEFT: #3e4243 1px solid; COLOR: #ffffff; PADDING-TOP: 10px; BORDER-BOTTOM: #3e4243 1px solid; BACKGROUND-COLOR: #2e3233
+}
+.entrymeta {
+	FONT-SIZE: 11px; MARGIN-BOTTOM: 15px; COLOR: #ffffff
+}
+.entrybody A {
+	FONT-WEIGHT: bold; COLOR: #ffa200; TEXT-DECORATION: none
+}
+.entrybody A:visited {
+	FONT-WEIGHT: bold; COLOR: #ffa200; TEXT-DECORATION: none
+}
+.entrybody A:hover {
+	TEXT-DECORATION: underline
+}
+.entry UL {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 30px; LIST-STYLE-TYPE: disc
+}
+.entry OL {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 30px; LIST-STYLE-TYPE: disc
+}
+.entry UL LI {
+	LINE-HEIGHT: 1.5em; PADDING-TOP: 5px
+}
+.entry OL LI {
+	LINE-HEIGHT: 1.5em; PADDING-TOP: 5px
+}
+H2#comments {
+	PADDING-RIGHT: 2px; MARGIN-TOP: 30px; PADDING-LEFT: 2px; FONT-SIZE: 110%; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 2px; COLOR: #ff9900; PADDING-TOP: 2px
+}
+#commentblock {
+	CLEAR: both; PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; COLOR: #999999; PADDING-TOP: 20px
+}
+OL#commentlist {
+	PADDING-RIGHT: 5px; MARGIN-TOP: 0px; PADDING-LEFT: 5px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 5px; MARGIN-LEFT: 20px; COLOR: #9b9b9b; PADDING-TOP: 5px
+}
+#commentlist LI P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 8px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; PADDING-TOP: 0px
+}
+.commentname {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.commentinfo {
+	MARGIN-TOP: 3px; MARGIN-BOTTOM: 5px
+}
+.commenttext {
+	CLEAR: both; PADDING-RIGHT: 5px; BORDER-TOP: #000 1px solid; MARGIN-TOP: 0px; PADDING-LEFT: 5px; FONT-SIZE: 1.2em; MARGIN-BOTTOM: 30px; PADDING-BOTTOM: 5px; COLOR: #999; LINE-HEIGHT: 12px; PADDING-TOP: 5px; BACKGROUND-COLOR: #2e3233
+}
+.commenttext-admin {
+	CLEAR: both; PADDING-RIGHT: 5px; BORDER-TOP: #000 1px solid; MARGIN-TOP: 0px; PADDING-LEFT: 5px; FONT-SIZE: 1.2em; MARGIN-BOTTOM: 30px; PADDING-BOTTOM: 5px; COLOR: #999; LINE-HEIGHT: 12px; PADDING-TOP: 5px; BACKGROUND-COLOR: #2e3233
+}
+#commentsformheader {
+	PADDING-LEFT: 18px; FONT-SIZE: 1.4em; COLOR: #ff9900
+}
+#commentsform {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#commentsform FORM {
+	MARGIN: 0px; TEXT-ALIGN: left
+}
+#commentsform P {
+	MARGIN: 5px
+}
+#commentsform FORM TEXTAREA {
+	WIDTH: 99%
+}
+P.comments_link IMG {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#sidebar {
+	BORDER-RIGHT: #3e4243 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #3e4243 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px 5px 10px; BORDER-LEFT: #3e4243 1px solid; COLOR: #dddddd; PADDING-TOP: 5px; BORDER-BOTTOM: #3e4243 1px solid; BACKGROUND-COLOR: #2e3233
+}
+#sidebar H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%; MARGIN-BOTTOM: 10px; TEXT-TRANSFORM: uppercase; COLOR: #dddddd; BORDER-BOTTOM: #555 1px solid
+}
+#sidebar P {
+	MARGIN: 7px; COLOR: #999999; LINE-HEIGHT: 1.4em
+}
+#sidebar A {
+	COLOR: #ffa200; TEXT-DECORATION: none
+}
+#sidebar A:visited {
+	COLOR: #ffa200; TEXT-DECORATION: none
+}
+#sidebar A:hover {
+	COLOR: #ffa200; TEXT-DECORATION: underline
+}
+#sidebar UL LI {
+	LIST-STYLE-IMAGE: url(none); MARGIN-BOTTOM: 15px; MARGIN-LEFT: 0px; LIST-STYLE-TYPE: none
+}
+#sidebar UL P {
+	MARGIN: 5px 0px 8px
+}
+#sidebar UL SELECT {
+	MARGIN: 5px 0px 8px
+}
+#sidebar UL UL {
+	MARGIN: 5px 0px 0px 0px
+}
+#sidebar UL OL {
+	MARGIN: 5px 0px 0px 0px
+}
+#sidebar UL UL UL {
+	MARGIN: 0px 0px 0px 0px
+}
+#sidebar UL OL {
+	MARGIN: 0px 0px 0px 0px
+}
+OL LI {
+	LIST-STYLE-POSITION: outside; LIST-STYLE-TYPE: decimal
+}
+#sidebar UL OL LI {
+	LIST-STYLE-POSITION: outside; LIST-STYLE-TYPE: decimal
+}
+#sidebar UL UL LI {
+	PADDING-RIGHT: 0px; LIST-STYLE: none url(bull.gif) outside; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.1em; MARGIN: 3px 0em 0em 0.5em; PADDING-TOP: 0.1em
+}
+#sidebar UL OL LI {
+	PADDING-RIGHT: 0px; LIST-STYLE: none url(bull.gif) outside; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.1em; MARGIN: 3px 0em 0em 0.5em; PADDING-TOP: 0.1em
+}
+#searchblock {
+	MARGIN-LEFT: 1.1em
+}
+#keyword {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 100px;
+}
+#submit {
+	background-color: #ECE9D8;
+	border: 1px solid #ECE9D8;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 50px;
+}
+
+.remark {
+	font-size:12px;
+	COLOR: #ffffff;
+	BORDER-RIGHT: #3e4243 1px solid;
+	PADDING-RIGHT: 10px;
+	BORDER-TOP: #3e4243 1px solid;
+	PADDING-LEFT: 10px;
+	MARGIN-BOTTOM: 15px;
+	PADDING-BOTTOM: 10px;
+	BORDER-LEFT: #3e4243 1px solid;
+	PADDING-TOP: 10px;
+	BORDER-BOTTOM: #3e4243 1px solid;
+	BACKGROUND-COLOR: #2e3233
+}
+
+#username, #email2 {
+	width:230px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#textarea {
+	width:400px;
+	height:120px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.button1 {
+	width:130px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #ECE9D8;
+	border: 1px solid #ECE9D8;
+	padding-top: 3px;
+}
+/* Calendar sytle. You can change more detailed sytle about it in calendar.css */
+#calendar {
+	margin-top: 15px;
+}
+
+/* multiple page style */
+.multi_page {
+	
+}
+
+/* Image from ubb convertr */
+.ubbimg {
+	overflow:auto;
+}
+
+/* Ubb player style (swf/wmv/rm)*/
+.player {
+	border-left: 0px solid #7F9DB9;
+	margin: 10px;
+	font-size: 11px;
+}
+.player-title {
+	background-color: #2E3233;
+	border-top: 1px solid #3E4243;
+	border-left: 1px solid #3E4243;
+	border-right: 1px solid #3E4243;
+	border-bottom: 1px dashed #3E4243 !important;
+	border-bottom: 1px dotted #3E4243;
+	padding: 5px;
+	font-weight: bold;
+	color: #DDDDDD;
+}
+.player-title img {
+	padding-right: 3px;
+	margin-bottom: -4px;
+}
+.player-content {
+	word-wrap: break-all;
+	color: #DDDDDD;
+	padding: 4px; 
+	background-color: #2E3233;
+	border: 1px solid #3E4243;
+	border-top: 0px;
+}
+
+/* ubb [quote][/quote] style */
+.ubbquote {
+	background-color: #2E3233;
+	font-family: Courier New;
+	font-size: 12px;margin: 10px;
+	padding: 8px;width: 90%;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #3E4243;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #3E4243;
+	border-right-color: #3E4243;
+	border-bottom-color: #3E4243;
+	overflow:hidden;
+}
+
+/* ubb [code][/code] style */
+.ubbcode {
+	background-color: #2E3233;
+	font-family: Courier New;
+	font-size: 12px;margin: 10px;
+	padding: 8px;width: 90%;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #3E4243;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #3E4243;
+	border-right-color: #3E4243;
+	border-bottom-color: #3E4243;
+	overflow:hidden;
+}

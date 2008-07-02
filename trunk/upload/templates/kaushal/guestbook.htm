@@ -1,0 +1,19 @@
+<h2>留言</h2>
+<!-- BEGIN gbA -->
+<div class="remark">
+<p style="font-size:12px">{date}, <!-- IF email --><a href="mailto:{email}"><!-- ENDIF -->{name}<!-- IF email --></a><!-- ENDIF --> said:</p>
+<p style="font-size:12px;width:550px;overflow:hidden;">{content}</p>
+<!-- IF reply --><div class="remark" style="font-size:12px;width:550px;overflow:hidden;">回复：{reply}</div><!-- ENDIF -->
+</div>
+<div id="page">{cutpage}</div>
+<!-- END gbA -->
+
+<h2><strong>访客留言</strong></h2>
+<form name="input" method="post" action="{blogurl}index.php?do=newremark" id="formRemark">
+<div class="remark">
+<p style="font-size:12px"><input name="username" type="text" class="text" id="username" value="游客" /> 昵称 *</p>
+<p style="font-size:12px"><input name="email" type="text" class="text" id="email2" /> E-mail</p>
+<p style="font-size:12px"><textarea name="content" rows="5" cols="10" class="textarea" id="textarea"></textarea></p>
+<p style="font-size:12px"><input type="submit" name="Submit" value="发表留言" class="button1" id="remarkButton" />
+</div>
+</form>

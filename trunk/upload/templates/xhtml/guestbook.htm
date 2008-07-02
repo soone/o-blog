@@ -1,0 +1,20 @@
+<!-- BEGIN gbA -->
+<div class="guestbook{ROWBIT}">
+<p>{date}, <!-- IF email --><a href="mailto:{email}"><!-- ENDIF -->{name}<!-- IF email --></a><!-- ENDIF --> said:</p>
+<p>{content}</p>
+<!-- IF reply --><p class="reply">回复：{reply}</p><!-- ENDIF -->
+</div>
+<!-- END gbA -->
+<div id="articleList">
+<div id="page">{cutpage}</div>
+</div>
+
+<div class="guestNum"><strong>访客留言</strong></div>
+<form name="input" method="post" action="index.php?do=newgb" id="formGuest">
+<div id="guestForm">
+<p><input name="username" type="text" class="text" id="username" value="游客" /> 昵称 *</p>
+<p><input name="email" type="text" class="text" id="email2" /> E-mail</p>
+<p><textarea name="content" rows="5" cols="10" class="textarea" id="textarea"></textarea><input name="inblog" type="hidden" id="inblog2" value="{inblog}" /></p>
+<p><input type="submit" name="Submit" value="我写好啦" class="button1" id="guestButton" /></p>
+</div>
+</form>

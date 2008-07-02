@@ -1,0 +1,13 @@
+        
+		
+		<!-- BEGIN list -->
+		<div class="article">
+          <div class="articleTitle"><a href="{path}">{title}</a></div>
+          <div class="articleTime">Submitted by {author} {date}</div>
+          <div class="articleCon">
+		    {content}
+		  </div>
+          <div class="articleInfo"><a href="{path}">阅读全文</a> | 分类: <a href="index.php?do=class&amp;id={classid}">{className}</a> | <a href="{path}#remark">评论</a>:{remarkNum} | <a href="{path}#remark">引用</a>:{trackbackNum}  <!-- IF parent.show_viewcount -->| <a href="{path}">阅读:</a><script type="text/javascript" src="{parent.blogurl}count.php?do=get&amp;id={id}"></script><!-- ENDIF --></div>
+        </div>
+		<!-- END list -->
+		<div style="text-align:left;padding-top:30px;padding-bottom: 10px;">页面跳转: {page}</div>

@@ -1,0 +1,19 @@
+<div style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px;float:left">
+<!-- BEGIN list -->
+<div class="entry">
+  <h3 class="entrytitle"> <a href="{path}">{title}</a> </h3>
+  <div class="entrybody" style="overflow:hidden;">
+    <div class="entrymeta">
+      {author}	于 {date} 归类于 <a href="index.php?do=class&amp;id={classid}" title="{className}">{className}</a>
+	  <br />
+    </div>
+    <p style="width:550px;overflow:hidden;">{content}</p>
+    <p class="comments_link">
+      <a href="{path}#remark" title="评论"> 评论</a> ({remarkNum}) | <a href="{path}#remark">Trackback</a>({trackbackNum}) <!-- IF parent.show_viewcount --> | <a href="{path}">阅读</a>(<script type="text/javascript" src="{parent.blogurl}count.php?do=get&amp;id={id}"></script>)<!-- ENDIF -->
+	</p>
+  </div>
+</div>
+<!-- END list -->
+<div class="entrymeta">{page}</div>
+</div>
+

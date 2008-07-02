@@ -1,0 +1,28 @@
+        <div class="article">
+          <div class="commentTitle">
+            <div class="commentName">访客留言</div>
+          </div>
+		  <!-- BEGIN gbA -->
+          <div class="commentCon">{content}<!-- IF reply --><br /><br /><span style="color:#386792">回复：{reply}</span><!-- ENDIF --></div>
+          <div class="commentTime">{date}, <!-- IF email --><a href="mailto:{email}"><!-- ENDIF -->{name}<!-- IF email --></a><!-- ENDIF --> said:</div>
+          <!-- END gbA -->
+        </div>
+        <div style="text-align:left;padding-top:30px;padding-bottom: 10px;">页面跳转: {cutpage}</div>
+
+           <div class="commentTitle">
+            <div class="commentName">发表留言</div>
+          </div>
+          <form action="index.php?do=newgb" method="post">
+            <div class="oneinput">名字 *<br />
+              <input name="username" type="text" class="bginput" />
+            </div>
+            <div class="oneinput">E-mail<br />
+              <input name="email" type="text" class="bginput" />
+            </div>
+            <div class="oneinput">留言内容 *<br />
+              <textarea name="content" cols="60" rows="10" class="bginput"></textarea>
+            </div>
+            <div class="oneinput">
+              <input type="submit" value="提交" class="bgbutton" />
+            </div>
+          </form>

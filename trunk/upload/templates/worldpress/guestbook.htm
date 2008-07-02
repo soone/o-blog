@@ -1,0 +1,28 @@
+<div id="content">
+	<div id="comments">
+		<h2>留言列表</h2>
+		<ul>
+			<!-- BEGIN gbA -->
+			<li class="comment">
+				<p class="header alt{ROWBIT}">
+					<!-- IF email --><a href="mailto:{email}"><!-- ENDIF -->{name}<!-- IF email --></a><!-- ENDIF --> &nbsp;|&nbsp; {date}
+				</p>
+				<p>{content}</p>
+				<!-- IF reply --><p class="reply">{reply}</p><!-- ENDIF -->
+			</li>
+			<!-- END gbA -->
+		</ul>
+		<p class="cutpage">{cutpage}</p>
+		<br />
+
+		<h2>发表留言</h2>
+		<form action="index.php?do=newgb" method="post" id="commentform">
+			<fieldset>
+				<p><label for="author">昵称</label> <input type="text" name="username" id="author" value="{name}" tabindex="1" /> <em>Required</em></p>
+				<p><label for="email">Email</label> <input type="text" name="email" id="email" value="{email}" tabindex="2" /></p>
+				<p><label for="comment">Comment</label> <textarea name="content" id="comment" cols="45" rows="10" tabindex="4"></textarea></p>
+				<p><input type="submit" name="submit" value="Submit" class="button" tabindex="5" /></p>
+			</fieldset>
+		</form>
+	</div>
+</div>

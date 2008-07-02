@@ -1,0 +1,41 @@
+<div id="commentWrapper" class="comment-wrapper">
+
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">
+<b>留言列表</b>
+</div>
+<!-- BEGIN gbA -->
+<div style="padding: 8px;margin: 5px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #DEE4DA;overflow:hidden;">
+<div class="commentbox">
+		<div class="commentbox-title">
+		<strong>{date}, <!-- IF email --><a href="mailto:{email}"><!-- ENDIF -->{name}<!-- IF email --></a><!-- ENDIF --> said:</strong>
+		</div>
+		<br />
+		<div class="commentbox-content" style="word-break:break-all;">
+			{content}
+			<!-- IF reply --><div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;margin-top: 18px;">回复：{reply}</div><!-- ENDIF -->
+		</div>
+</div></div>
+<!-- END gbA -->
+<br />
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">{cutpage}</div>
+<br />
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">
+<strong>访客留言</strong>
+</div>
+<form name="input" method="post" action="index.php?do=newgb" id="formGuest">
+<div style="padding: 8px;margin: 5px;border: 1px solid #CED4CA;background-color: #FAFAF0;">
+<p style="margin: 0px;padding: 2px;">
+<input name="username" type="text" id="username" value="游客" size="30" /> 昵称 *</p>
+<p style="margin: 0px;padding: 2px;">
+<input name="email" type="text" id="email2" size="30" /> E-mail </p>
+<p style="margin: 0px;padding: 2px;">
+<textarea name="content" rows="9" cols="70" class="textarea" id="textarea"></textarea></p>
+<p style="margin: 0px;padding: 2px;"><input type="submit" name="Submit" value="提交留言" class="subbutton" id="remarkButton" /></p>
+</div>
+</form>
+
+<div class="article-bottom" style="display: block">
+</div>
+</div>
+</div>
+</div>

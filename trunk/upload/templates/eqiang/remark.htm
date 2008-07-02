@@ -1,0 +1,44 @@
+<br />
+<div class="remarkNum" style="border-top-width: 1px;border-top-style: solid;border-top-color: #CCCCCC;padding-left: 15px;padding-top: 15px;"><strong>该日志的引用地址:</strong></div>
+<ul class="msg trackback">
+	<li class="msgarticle">
+	<span><strong>GB2312</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=gb2312" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=gb2312</a><span><br />
+	<span><strong>UTF-8</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=utf-8" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=utf-8</a></span>
+	</li>
+</ul>
+
+<!-- IF tbnum --><div class="remarkNum" style="padding-left: 15px;padding-top: 15px;"><strong>{tbnum} Trackback Pings</strong></div><!-- ENDIF -->
+<!-- BEGIN trackback -->
+<ul class="msg">
+	<li>◇ 第{id}楼: {date}, <a href="{url}">{title}</a>, {blogname} said:
+	<br /><br />
+	</li>
+	<li class="msgurl" style="overflow:hidden;height:auto">{excerpt}</li>
+	
+</ul>
+<!-- END trackback -->
+
+<!-- IF num --><div class="remarkNum" style="padding-left: 15px;padding-top: 15px;"><strong>{num} Comments</strong></div><!-- ENDIF -->
+<!-- BEGIN remark -->
+<ul class="msg">
+	<li>◇ 第{id}楼: {date}, <!-- IF email --><a href="mailto:{email}"> <!-- ENDIF -->{username}<!-- IF email --></a><!-- ENDIF --> said:
+	<br /><br /></li>
+	<li class="msgurl" style="overflow:hidden;height:auto">{content}</li>
+</ul>
+<!-- END remark -->
+
+<div class="post" id="divCommentPost">
+	<p class="posttop"><a name="comment">针对这我有话要说:</a></p>
+	<form name="input" method="post" action="{blogurl}index.php?do=newremark" id="formRemark">
+	<p style="margin: 5px;">名称(*) <input name="username" type="text" class="text" id="username" value="{name}" />
+	 E-mail <input name="email" type="text" class="text" id="email2" value="{email}" /></p>
+	<p style="margin: 5px;"><textarea name="content" rows="8" cols="70" class="textarea" id="textarea"></textarea><input name="inblog" type="hidden" id="inblog2" value="{inblog}" /><input name="inblog" type="hidden" id="inblog2" value="{inblog}" /></p>
+	<p style="margin: 5px;"><input type="submit" name="Submit" value="提交评论" class="button1" id="remarkButton" />
+	<!-- IF makehtml -->
+	<!-- ELSE -->
+	<input name="remember" id="check" type="checkbox" value="1" checked="checked" /> Remember Me
+	<!-- ENDIF makehtml -->
+	</form>
+	</p>
+</div>
+</div>

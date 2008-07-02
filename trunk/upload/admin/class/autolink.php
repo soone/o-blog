@@ -1,0 +1,19 @@
+<?php
+$autolink = array (
+  0 => 
+  array (
+    'keyword' => 'ÐÂÀË',
+    'url' => 'http://www.sina.com',
+  ),
+  1 => 
+  array (
+    'keyword' => 'o-blog',
+    'url' => 'http://www.phpblog.cn',
+  ),
+  2 => 
+  array (
+    'keyword' => 'ÍøÒ×',
+    'url' => 'http://www.163.com',
+  ),
+);
+?>

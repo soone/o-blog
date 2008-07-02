@@ -1,0 +1,55 @@
+/**
+ * 此css文件定义日历的样式，每个模板各有一个。
+ */
+
+/* 月日的 css */
+.calendarHerder {
+	text-decoration: none;
+	margin: 0px;
+	padding-left: 4px;
+	color:#63B4CD;
+}
+
+/* 最外面大单元格的 css */
+.outTable {
+	width:154px;
+	margin: 0px;
+	padding-left: 8px;
+}
+
+/* 日期单元格的 css */
+.calendar {
+	color:#4B879A;
+	font-size:11px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 日期的table的 css */
+#daytable {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 有日志的连接样式 css */
+.haveblog {
+	text-decoration: underline;
+}
+
+/* 当天日期单元格的 css */
+.riqi {
+	background-color: #D7E1EC;
+}
+
+/* 星期数单元格 css */
+.weektd {
+	background-color: #E4EFFA;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #63B4CD;
+}
+
+/* 星期六和星期日的文字css */
+.satsun {
+	font-weight: bold;
+}

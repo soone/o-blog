@@ -1,0 +1,12 @@
+#
+# robots.txt for O-blog
+# Version 2.x
+#
+
+User-agent: *
+Disallow: /admin/
+Disallow: /bak/
+Disallow: /cache/
+Disallow: /class/
+Disallow: /templates/
+Disallow: /uploadfiles/

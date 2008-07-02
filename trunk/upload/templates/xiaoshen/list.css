@@ -1,0 +1,28 @@
+#divType{
+	text-align:right;
+	margin:10px 10px 5px 0;
+}
+div.listline{
+	width:96%;
+	margin:4px 6px;
+	padding:0;
+	float:left;
+}
+div.lineright{
+	width:21%;
+	margin:0;
+	padding:0;
+	float:right;
+}
+div.lineleft{
+	width:74%;
+	margin:0;
+	padding:0 0 0 10px;
+	float:left;
+}
+li.relation{
+	margin:0;
+	padding:2px 10px 1px 10px;
+	background:#F8F8F8;
+	line-height:150%;
+}

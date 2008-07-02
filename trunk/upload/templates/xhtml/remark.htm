@@ -1,0 +1,34 @@
+<a name="remark"></a>
+<div class="remarkNum"><strong>此文的引用地址:</strong></div>
+<div class="remark0">
+<p><strong>GB2312</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=gb2312" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=gb2312</a></p>
+<p><strong>UTF-8</strong> <a href="{blogurl}trackback.php?id={inblog}&amp;encode=utf-8" target="_blank">{blogurl}trackback.php?id={inblog}&amp;encode=utf-8</a></p>
+</div>
+<!-- IF tbnum --><div class="remarkNum"><strong>{tbnum} Trackback Pings</strong></div><!-- ENDIF -->
+<!-- BEGIN trackback -->
+<div class="remark{ROWBIT}">
+<p><strong># {id}: </strong> {date}, <a href="{url}">{title}</a>, {blogname} said:</p>
+<p>{excerpt}</p>
+</div>
+<!-- END trackback -->
+
+<!-- IF num --><div class="remarkNum"><strong>{num} 条评论</strong></div><!-- ENDIF -->
+<!-- BEGIN remark -->
+<div class="remark{ROWBIT}">
+<p><strong># {id}: </strong> {date}, <!-- IF email --><a href="mailto:{email}"> <!-- ENDIF -->{username}<!-- IF email --></a><!-- ENDIF --> said:</p>
+<p>{content}</p>
+</div>
+<!-- END remark -->
+<div class="remarkNum"><strong>添加评论</strong></div>
+<form name="input" method="post" action="{blogurl}index.php?do=newremark" id="formRemark">
+<div id="remarkForm">
+<p><input name="username" type="text" class="text" id="username" value="{name}" /> 昵称 *</p>
+<p><input name="email" type="text" class="text" id="email2" value="{email}" /> E-mail </p>
+<p><textarea name="content" rows="5" cols="10" class="textarea" id="textarea"></textarea><input name="inblog" type="hidden" id="inblog2" value="{inblog}" /></p>
+<p><input type="submit" name="Submit" value="我写好啦" class="button1" id="remarkButton" />
+<!-- IF makehtml -->
+<!-- ELSE -->
+<input name="remember" id="check" type="checkbox" value="1" checked="checked" /> Remember Me</p>
+<!-- ENDIF makehtml -->
+</div>
+</form>

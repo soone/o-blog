@@ -1,0 +1,16 @@
+<!-- BEGIN list -->
+<div class="post cate1 auth1">
+	<h4 class="post-date">{date}</h4>
+	<h2 class="post-title"><a href="{path}">{title}</a></h2>
+	<br />
+	<div class="post-body">
+	{content}
+	</div>
+	<h5 class="post-tags"></h5>
+	<h6 class="post-footer">
+		<a href="{path}">阅读全文</a> | 发布:{author} | 分类: <a href="index.php?do=class&amp;id={classid}">{className}</a> | <a href="{path}#remark">评论</a>:{remarkNum} | <a href="{path}#remark">引用</a>:{trackbackNum}  <!-- IF parent.show_viewcount -->| <a href="{path}">阅读:</a><script type="text/javascript" src="{parent.blogurl}count.php?do=get&amp;id={id}"></script><!-- ENDIF -->
+	</h6>
+</div>
+<!-- END list -->
+<div class="post pagebar">分页:{page}</div>
+</div>

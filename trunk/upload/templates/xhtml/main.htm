@@ -1,0 +1,59 @@
+<div id="main3">
+<div id="sidebar">
+<div id="sidebartop">
+<div id="stleft"></div>
+<div id="stright"></div>
+</div>
+<!-- start sidebar content -->
+<div id="sidebarContent">
+<div id="date">{today}</div>
+<h1>日历</h1>
+{calendar}
+<h1>分类</h1>
+{sort}
+<h1>搜索</h1>
+<div id="search">
+<form name="form1" method="post" action="{blogurl}index.php?do=search">
+<input name="keyword" type="text" id="keyword" />
+<input name="Submit" type="submit" value="GO!" id="searchB" />
+</form>
+</div>
+<h1>归档</h1>
+{archive}
+<h1>最新日志</h1>
+{lastblog}
+<h1>最新评论</h1>
+{lastRemark}
+<h1>我的朋友</h1>
+{link}
+<h1>其他</h1>
+<ul class="last">
+<li><a href="http://validator.w3.org/check?uri=referer" target="_blank">XTHML 1.0</a> <a href="http://jigsaw.w3.org/css-validator" target="_blank">CSS 2.0</a></li>
+</ul>
+</div>
+<!-- end sidebar content -->
+<div id="sidebarbo">
+<div id="sbleft"></div>
+<div id="sbright"></div>
+</div>
+</div>
+<div id="mainContent">
+<div id="mainContentTop">
+<div id="mtleft"></div>
+<div id="mtright"></div>
+</div>
+<!-- start main content -->
+<div id="announce">{discribe}</div>
+{main}
+<!-- end main content -->
+<div id="mainContentBo">
+<div id="mbleft"></div>
+<div id="mbright"></div>
+</div>
+</div>
+<ul id="copy">
+
+<li>&copy; O-blog All rights reserved</li>
+<li>www.phpBlog.cn</li>
+</ul>
+</div>
