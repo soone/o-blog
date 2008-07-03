@@ -1,0 +1,19 @@
+=安装（Install）=
+
+ 1. 如果您用的是 LINUX 类型的主机，请设置以下目录
+ 和文件的权限为 777 ; 如果您用的 WINDOWS 类型的主机，
+ 那么请直接到第2步。
+
+     ./
+     ./cache
+     ./archives
+     ./admin/mysql.php
+     ./admin/class/autolink.php
+     ./uploadfiles
+     ./templates 及此文件夹下的所有文件(夹) 
+     ./bak
+
+ 2. 运行 install.php 文件，安装程序会一步步指导您
+ 完成安装
+
+ 3. 删除 install.php 文件。
