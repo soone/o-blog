@@ -1,9 +1,0 @@
-= O-Blog 简体中文版 =
-
-  * Powered by shirhirui / 风色
-  * Version : 2.6
-  * Created : 2004-09-28
-
-  * Email : shirui@gmail.com
-  * Support : http://www.phpBlog.cn
-  * BBS : http://bbs.phpBlog.cn
