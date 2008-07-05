@@ -2,29 +2,28 @@
 /*
 +--------------------------------------------------------+
 | O-BLOG - PHP Blog System                               |
-| Copyright (c) 2004 phpBlog.CN                          |
+| Copyright (c) 2004 phpblog.cn                          |
 | Support : http://www.phpBlog.cn                        |
-| Author : ShiShiRui (shishirui@163.com)                 |
+| Author : shishirui (shirui@gmail.com)                  |
 |--------------------------------------------------------+
 */
 error_reporting(7);
 
 header("content-Type: text/html; charset=gb2312");
 
-// Functions & Variables 
 $header = "<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\"><title>O-BLOG 2.6 安装程序</title><style type=\"text/css\"><!--TABLE {font-family: Georgia, \"Times New Roman\", Times, serif;font-size: 14px;color: #000000;}.header {font-family: Georgia, \"Times New Roman\", Times, serif;font-size: 18px;font-weight: bold;color: #FFFFFF;background-color: #B50000;}--></style><style type=\"text/css\"><!--INPUT {font-family: Georgia, \"Times New Roman\", Times, serif;font-size: 14px;width: 260px;background-color: #B50000;color: #FFFFFF;font-weight: bold;height: 28px;}.itemtitle {font-size: 18px;}--></style></head><body bgcolor=\"#F3F3F3\"><form name=\"form1\" method=\"post\" action=\"install.php?do=action\">  <table width=\"650\" border=\"0\" align=\"center\" cellpadding=\"10\" cellspacing=\"1\" bgcolor=\"#CCCCCC\">    <tr valign=\"top\" bgcolor=\"#666666\"><td height=\"80\" colspan=\"3\" bgcolor=\"#F3F3F3\" class=\"header\"><strong>O-BLOG 2.6 安装程序</strong>&nbsp;</td></tr><tr><td colspan=\"3\" bgcolor=\"#FFFFFF\">";
 
 $footer = "</td></tr></table></form></body></html>";
 
 function set_writeable($file) {
 	if(is_writeable($file)) {
-		echo"检测文件（夹）$file …… <strong>可写</strong><br>";
+		echo "检测文件（夹）$file …… <strong>可写</strong><br>";
 	} else {
-		echo"检测文件（夹）$file …… <strong>不可写</strong><br>正在改变权限 …… ";
+		echo "检测文件（夹）$file …… <strong>不可写</strong><br>正在改变权限 …… ";
 		if(@chmod($file,0777)) {
-		echo"<strong>可写</strong><br>";
+		echo "<strong>可写</strong><br>";
 		} else {
-		echo"<strong>失败,请手动更改此文件访问权限！</strong><br>";
+		echo "<strong>失败,请手动更改此文件访问权限！</strong><br>";
 		exit;
 		}
 	}
@@ -32,10 +31,11 @@ function set_writeable($file) {
 
 function querySQL() {
 	global $mysql_prefix;
-
+	
+	$sql[] = "SET NAMES 'gbk'";
 	$sql[] = "drop table if exists `".$mysql_prefix."admin`;";
-	$sql[] = "CREATE TABLE `".$mysql_prefix."admin` ( `id` int(10) NOT NULL auto_increment, `username` varchar(15) default 'admin', `password` varchar(40) default '21232f297a57a5a743894a0e4a801fc3', `nickname` varchar(100) binary default NULL, `email` varchar(100) default NULL, `homepage` varchar(100) default NULL, `qq` varchar(30) default NULL, `msn` varchar(100) default NULL, `icq` varchar(100) default NULL, `remark` text, `auth` text, PRIMARY KEY (`id`)) TYPE=MyISAM;";
-	$sql[] = "insert into `".$mysql_prefix."admin` values (1,'admin','21232f297a57a5a743894a0e4a801fc3','管理员','admin@shirui.org','http://shirui.org','5194913','shishirui@hotmail.com','123456789','这家伙很懒，什么都没留下.','config,doconfig,phpinfo,addBlog,doaddBlog,editBlog,modBlog,domodBlog,delBlog,buildBlog,dosomeBlog,remarkManager,dosomeRemark,delRemark,checkRemark,banRemark,modRemark,domodRemark,addSort,doaddSort,editSort,delSort,modSort,domodSort,dosomeSort,addLink,doaddLink,editLink,delLink,modLink,domodLink,dosomeLink,bak,dobak,import,runsql,dorunsql,optimize,repair,dooptimize,dorepair,rssImport,doRssImport,rssImportSort,rssExport,doRssExport,actlog,cleanActlog,userlog,cleanUserlog,password,updatepassword,guestbook,modgb,domodgb,replygb,doreplygb,delgb,dosomeGb,banned,dobanned,addNote,doaddNote,editNote,viewNote,modNote,domodNote,delNote,uploadManager,bakManager,delFile,rebuild,dobuild,upload,doupload,addUser,doaddUser,editUser,modUser,domodUser,delUser,editTrackback,modTrackback,domodTrackback,delTrackback,dosomeTrackback,addAutolink,editAutolink,doaddAutolink,updateAutolink,delAutolink,selectTemplate,editTemplate,saveTemplate,logout');";
+	$sql[] = "CREATE TABLE `".$mysql_prefix."admin` ( `id` int(10) NOT NULL auto_increment, `username` varchar(15) default 'admin', `password` varchar(40) default '21232f297a57a5a743894a0e4a801fc3', `nickname` varchar(100) default NULL, `auth` text, PRIMARY KEY (`id`)) TYPE=MyISAM;";
+	$sql[] = "insert into `".$mysql_prefix."admin` values (1,'admin','21232f297a57a5a743894a0e4a801fc3','管理员','config,doconfig,phpinfo,addBlog,doaddBlog,editBlog,modBlog,domodBlog,delBlog,buildBlog,dosomeBlog,remarkManager,dosomeRemark,delRemark,checkRemark,banRemark,modRemark,domodRemark,addSort,doaddSort,editSort,delSort,modSort,domodSort,dosomeSort,addLink,doaddLink,editLink,delLink,modLink,domodLink,dosomeLink,bak,dobak,import,runsql,dorunsql,optimize,repair,dooptimize,dorepair,rssImport,doRssImport,rssImportSort,rssExport,doRssExport,actlog,cleanActlog,userlog,cleanUserlog,password,updatepassword,guestbook,modgb,domodgb,replygb,doreplygb,delgb,dosomeGb,banned,dobanned,addNote,doaddNote,editNote,viewNote,modNote,domodNote,delNote,uploadManager,bakManager,delFile,rebuild,dobuild,upload,doupload,addUser,doaddUser,editUser,modUser,domodUser,delUser,editTrackback,modTrackback,domodTrackback,delTrackback,dosomeTrackback,addAutolink,editAutolink,doaddAutolink,updateAutolink,delAutolink,selectTemplate,editTemplate,saveTemplate,logout');";
 
 	$sql[] = "drop table if exists `".$mysql_prefix."adminlog`;";
 	$sql[] = "CREATE TABLE `".$mysql_prefix."adminlog` ( `id` int(15) unsigned NOT NULL auto_increment, `action` varchar(50) default NULL, `script` varchar(255) default NULL, `date` varchar(20) default NULL, `ip` varchar(20) default NULL, PRIMARY KEY (`id`)) TYPE=MyISAM;";
@@ -76,7 +76,7 @@ function querySQL() {
 
 	foreach($sql as $key=>$val) {
 		if(!mysql_query($val)) {
-			die("导入数据失败:<br>query:<br>".$val);
+			die("导入数据失败:<br>query:<br>".$val."<br>".mysql_error()."<br>");
 		}
 	}
 	Return true;
@@ -165,9 +165,14 @@ if(isset($_GET['do']) && $_GET['do'] == 'action') {
 	}
 	echo "<hr size=1>";
 	updateAdmin();
-
+	
 	echo "<hr size=1>";
-	die("恭喜您！安装成功！<br>现在请删除 <b>install.php</b> ,您就可以使用了！".$footer);
+	if (@chmod('install.php', 0777) && @unlink('install.php')) {
+		die("恭喜您！安装成功！现在您就可以使用了！".$footer);
+	} else {
+		die("恭喜您！安装成功！<br>现在请删除 <b>install.php</b> ,您就可以使用了！".$footer);
+	}
+	
 	echo $footer;
 }
 
