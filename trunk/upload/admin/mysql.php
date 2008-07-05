@@ -11,7 +11,7 @@ $mysql_user			= 'root';
 $mysql_pass			= '';
 
 /* Mysql Database Name */
-$mysql_dbname		= 'ob26';
+$mysql_dbname		= 'o-blog';
 
 /* Mysql Database Table Prefix */
 $mysql_prefix		= 'ob_';
