@@ -6,9 +6,6 @@
 | Support : http://www.phpBlog.cn                        |
 | Author : ShiShiRui (shishirui@163.com)                 |
 |--------------------------------------------------------+
-| This Script Is Modified From Bo-blog v2.0.1 Sp1.       |
-| Thanks You, Bob Shen!                                  |
-|--------------------------------------------------------+
 */
 error_reporting(7);
 require('config.php');

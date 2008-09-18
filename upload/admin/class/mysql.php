@@ -38,6 +38,7 @@ class DB_MySQL  {
 		}
 
 		mysql_select_db($dbname);
+		$this->query('SET NAMES \'gbk\'');
 	}
 
 	function select_db($dbname) {
