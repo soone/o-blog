@@ -10,14 +10,17 @@
 error_reporting(7);
 require('global.php');
 
-if(isset($_POST['username']) && isset($_POST['password']) && @$_POST['username'] !== "") {
-	$user = $DB->query("SELECT `username`, `password`, `id` FROM `".$mysql_prefix."admin` WHERE `username` = '".trim($_POST['username'])."'");
+
+
+$username=checkPost(trim($_POST['username']));
+$password=checkPost(trim($_POST['password']));
+
+if($username && $password) {
+	$user = $DB->query("SELECT `username`, `password`, `id` FROM `".$mysql_prefix."admin` WHERE `username` = '".$username."'");
 	$userRe = $DB->fetch_array($user);
 	$userR = $userRe['username'];
 	$passR = $userRe['password'];
 	$idR = $userRe['id'];
-	$username=addslashes(trim($_POST['username']));
-	$password=addslashes(trim($_POST['password']));
 
 	//ÅÐ¶ÏÑéÖ¤Âë
 	$show_verify_code = (function_exists("gd_info")) ? 1 : 0;
